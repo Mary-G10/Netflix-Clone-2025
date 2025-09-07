@@ -62,7 +62,9 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="copy-write">&copy;1997-2026 Netflix,Inc</div>
+        <div className="copy-write">
+          This page is protected by Google reCAPTCHA to ensure you're not a bot.
+        </div>
       </div>
     </div>
   );
