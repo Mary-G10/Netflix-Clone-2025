@@ -207,14 +207,14 @@
 }
 
 /* Focus states for accessibility */
-.footer_left li:focus, .footer_column li:focus {
+ .footer_left li:focus, .footer_column li:focus {
   outline: 2px solid #fff;
   outline-offset: 2px;
   color: #fff;
-}
+} 
 
 /* Hover effect for the entire footer */
-.footer_outer_container::before {
+ .footer_outer_container::before {
   content: '';
   position: absolute;
   top: 0;
@@ -222,4 +222,4 @@
   right: 0;
   height: 1px;
   background: linear-gradient(90deg, transparent, #333, transparent);
-}
+} 

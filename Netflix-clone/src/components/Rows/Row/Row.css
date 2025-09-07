@@ -30,8 +30,6 @@
   transition: transform 0.45s;
   cursor: pointer;
   border-radius: 4px;
- 
-  
 }
 
 .row_poster:hover {
@@ -46,6 +44,131 @@
 .row_posterLarge:hover {
   transform: scale(1.09);
 }
+
+/* Mobile Devices (up to 480px) */
+@media screen and (max-width: 480px) {
+  .row {
+    margin: 15px 0;
+  }
+  
+  .row h1 {
+    font-size: 1.2rem;
+    padding-left: 15px;
+    margin-bottom: 8px;
+  }
+  
+  .row_posters {
+    padding: 15px;
+    gap: 8px;
+  }
+  
+  .row_poster {
+    max-height: 100px;
+    min-width: 65px;
+  }
+  
+  .row_posterLarge {
+    max-height: 180px;
+  }
+  
+  .row_poster:hover,
+  .row_posterLarge:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Tablets (481px to 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .row h1 {
+    font-size: 1.3rem;
+    padding-left: 18px;
+  }
+  
+  .row_posters {
+    padding: 18px;
+    gap: 9px;
+  }
+  
+  .row_poster {
+    max-height: 110px;
+    min-width: 72px;
+  }
+  
+  .row_posterLarge {
+    max-height: 220px;
+  }
+  
+  .row_poster:hover,
+  .row_posterLarge:hover {
+    transform: scale(1.06);
+  }
+}
+
+/* Small Laptops (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .row_poster {
+    max-height: 115px;
+    min-width: 75px;
+  }
+  
+  .row_posterLarge {
+    max-height: 230px;
+  }
+  
+  .row_poster:hover,
+  .row_posterLarge:hover {
+    transform: scale(1.07);
+  }
+}
+
+/* Large Screens (1025px and up) */
+@media screen and (min-width: 1025px) {
+  .row h1 {
+    font-size: 1.5rem;
+  }
+  
+  .row_posters {
+    padding: 25px;
+    gap: 12px;
+  }
+  
+  .row_poster {
+    max-height: 140px;
+    min-width: 90px;
+  }
+  
+  .row_posterLarge {
+    max-height: 280px;
+  }
+}
+
+/* Ultra-wide screens (1440px and up) */
+@media screen and (min-width: 1440px) {
+  .row_posters {
+    padding: 30px;
+    gap: 15px;
+  }
+  
+  .row_poster {
+    max-height: 160px;
+    min-width: 100px;
+  }
+  
+  .row_posterLarge {
+    max-height: 320px;
+  }
+}
+
+/* Touch devices - disable hover effects */
+@media (hover: none) and (pointer: coarse) {
+  .row_poster:hover,
+  .row_posterLarge:hover {
+    transform: none;
+  }
+}
+
+
+
 /* .row {
   margin: 20px 0;
   color: white;
@@ -78,6 +201,8 @@
   transition: transform 0.45s;
   cursor: pointer;
   border-radius: 4px;
+ 
+  
 }
 
 .row_poster:hover {
@@ -87,9 +212,8 @@
 
 .row_posterLarge {
   max-height: 250px;
-} */
+}
 
-/* Video container - reduce padding */
-/* .row > div:last-child {
-  padding: 10px 20px;
+.row_posterLarge:hover {
+  transform: scale(1.09);
 } */
