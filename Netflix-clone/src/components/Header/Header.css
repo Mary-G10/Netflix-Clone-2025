@@ -1,11 +1,10 @@
-/* Header CSS Styles */
 .header_outer_container {
   width: 100%;
   background-color: #000;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -13,17 +12,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 0; /* Reduced padding */
-  width: 100%; /* Use full width instead of max-width */
-  height: 50px; /* Set fixed height */
+  padding: 5px 0; 
+  width: 100%; 
+  height: 50px; 
 }
 
 .header_left {
-  padding-left: 15px; /* Reduced padding */
+  padding-left: 15px; 
 }
 
 .header_right {
-  padding-right: 15px; /* Reduced padding */
+  padding-right: 15px; 
 }
 
 .header_left ul,
@@ -36,9 +35,9 @@
 }
 
 .header_left ul li {
-  margin-right: 25px; /* Reduced spacing */
+  margin-right: 25px; 
   color: #fff;
-  font-size: 13px; /* Slightly smaller text */
+  font-size: 13px; 
   font-weight: 400;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -114,8 +113,5 @@
     margin-right: 25px;
   }
   
-  /* Hide some navigation items on very small screens */
-  .header_left ul li:nth-child(n+6) {
-    display: none;
-  }
-}
+ 
+} 

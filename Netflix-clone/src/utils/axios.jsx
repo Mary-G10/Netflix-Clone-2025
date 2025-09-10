@@ -5,3 +5,5 @@ const instance = axios.create({
 });
 
 export default instance;
+// imports the axios library, which is a popular HTTP client for making API requests in JavaScrip
+// An instance is a customized version of axios with predefined configuration that will be applied to all requests made with this instance.

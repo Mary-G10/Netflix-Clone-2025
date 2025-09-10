@@ -1,3 +1,6 @@
+// import.meta.env - This is Vite's way of accessing environment variables in the browser
+// VITE_API_KEY - The specific environment variable name
+// The const API_KEY = part stores this value in a constant
 const API_KEY = import.meta.env.VITE_API_KEY;
 const requests = {
   fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
