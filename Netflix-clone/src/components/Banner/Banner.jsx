@@ -8,14 +8,14 @@ const Banner = () => {
   const [loading, setLoading] = useState(true);
   // Creates state variable movie (initially empty object) to store selected movie data
   // Creates state variable loading (initially true) to track data fetching status
-  // Hook that runs side effects when component mounts
   // Declares async function to fetch movie data from API
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const request = await axios.get(requests.fetchNetflixOriginals);
-        console.log("✅ API Response:", request.data);
+        console.log(request);
+        // when we say axios, it's base url and request means find from the rquest and concatenate
         // Makes GET request to fetch Netflix Originals using the configured axios instance
         // Extracts the results array from API response
         // Checks if results exist and contain at least one movie
@@ -34,16 +34,6 @@ const Banner = () => {
         setLoading(false);
       } catch (error) {
         console.error("❌ API Error:", error);
-        // console.error("Error details:", error.response?.data);
-        // setLoading(false);
-
-        // Sets fallback movie data when API fails
-        // setMovie({
-        //   title: "Sample Netflix Original",
-        //   overview:
-        //     "Unable to fetch live data. This is a sample description for the Netflix banner component. Enjoy streaming your favorite shows and movies.",
-        //   backdrop_path: null,
-        // });
       }
     };
 
@@ -85,25 +75,22 @@ const Banner = () => {
         movie?.overview || "No description available"
       }`
     );
-
-    // Additional debug
-    console.log("More Info function executed successfully");
   };
 
-  if (loading) {
-    return (
-      <div className="banner__loading">
-        <div className="banner__loading-text">Loading amazing content...</div>
-      </div>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <div className="banner__loading">
+  //       <div className="banner__loading-text">Loading amazing content...</div>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div
       className="banner"
       style={{
         backgroundImage: movie?.backdrop_path
-          ? `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://image.tmdb.org/t/p/original${movie.backdrop_path}')`
+          ? `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`
           : undefined,
       }}
     >
@@ -214,11 +201,13 @@ export default Banner;
 //   );
 // }
 // Returns a loading indicator if data is still being fetched
-{/* <h1 className="banner__title">
+{
+  /* <h1 className="banner__title">
   {movie?.title || movie?.name || movie?.original_name || "Featured Content"}
 </h1>
 
-Displays movie title with multiple fallback options */}
+Displays movie title with multiple fallback options */
+}
 // <div className="banner__fade-bottom" />
 // <div className="banner__fade-bottom" />
 // Empty div used for CSS fade effect at the bottom of the banner

@@ -5,6 +5,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
 
+
 const Footer = () => {
   return (
     <div className="footer_outer_container">
@@ -62,11 +63,19 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="copy-write">
-          This page is protected by Google reCAPTCHA to ensure you're not a bot.
+        <div className="service_code">
+          <p>
+            Service Code
+          </p>
+          </div>
+          <div className="copy-write">
+            &copy;Netflix-Clone-2025, Inc.
+
+          </div>
+        
         </div>
       </div>
-    </div>
+   
   );
 };
 
