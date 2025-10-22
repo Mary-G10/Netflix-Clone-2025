@@ -12,7 +12,7 @@ const DisclaimerBanner = () => {
         top: 0,
         left: 0,
         right: 0,
-        backgroundColor: "#e50914",
+        backgroundColor: "#1a73e8",
         color: "white",
         padding: "12px 20px",
         textAlign: "center",
@@ -29,9 +29,9 @@ const DisclaimerBanner = () => {
     >
       <span style={{ fontSize: "18px" }}>⚠️</span>
       <span>
-        <strong>PORTFOLIO PROJECT</strong> | This is an educational Netflix
-        clone for learning purposes only. Not affiliated with Netflix, Inc. | No
-        real data collection or login required.
+        <strong>EDUCATIONAL PROJECT</strong> | StreamFlix is a movie streaming
+        platform built for learning purposes. No real data collection or login
+        required.
       </span>
       <button
         onClick={() => setIsVisible(false)}

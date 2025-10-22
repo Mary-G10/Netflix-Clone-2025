@@ -46,7 +46,7 @@
 .header_left ul li:first-child {
   font-size: 20px; /* Smaller logo text */
   font-weight: bold;
-  color: #e50914;
+  color: #1a73e8;
   margin-right: 30px; /* Reduced spacing */
 }
 
@@ -55,7 +55,7 @@
 }
 
 .header_left ul li:first-child:hover {
-  color: #e50914;
+color: #1a73e8;
 }
 
 .header_right ul li {

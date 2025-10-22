@@ -25,6 +25,14 @@ This is an educational project that may trigger browser security warnings due to
 - TMDB API
 - GitHub Pages
 
+## Screenshots
+
+![StreamFlix Screenshot](screenshots/screenshot.png)
+
+---
+
+**Built as a learning project to practice React, API integration, and deployment.**
+
 <!-- # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
