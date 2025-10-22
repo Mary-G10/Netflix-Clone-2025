@@ -63,6 +63,7 @@
   color: #fff;
   cursor: pointer;
   transition: color 0.3s ease;
+  /* a smooth animation when the color property changes, taking 0.3 seconds to complete with an eased timing function. */
 }
 
 .header_right ul li:hover {

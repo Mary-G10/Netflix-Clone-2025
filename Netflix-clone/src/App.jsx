@@ -1,18 +1,33 @@
-import './App.css'
-import Home from './pages/Home/Home'
-
+import "./App.css";
+import DisclaimerBanner from "./components/DisclaimerBanner";
+import Home from "./pages/Home/Home";
 
 function App() {
- 
-
   return (
     <>
-      <div className='App'>
-        <Home/>
+      <DisclaimerBanner />
+      <div className="App">
+        <Home />
       </div>
-     
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
+// import './App.css'
+// import Home from './pages/Home/Home'
+
+// function App() {
+
+//   return (
+//     <>
+//       <div className='App'>
+//         <Home/>
+//       </div>
+
+//     </>
+//   )
+// }
+
+// export default App

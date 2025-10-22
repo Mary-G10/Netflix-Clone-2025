@@ -48,6 +48,7 @@
 .footer_data {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  /* With 4 columns, each gets 25% of the container width */
   gap: 15px;
 }
 
@@ -92,6 +93,7 @@
 @media (max-width: 480px) {
   .footer_data {
     grid-template-columns: 1fr;
+     /* free space in the grid */
   }
   
   .footer_column {

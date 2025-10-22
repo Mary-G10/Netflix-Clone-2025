@@ -76,15 +76,6 @@ const Banner = () => {
       }`
     );
   };
-
-  // if (loading) {
-  //   return (
-  //     <div className="banner__loading">
-  //       <div className="banner__loading-text">Loading amazing content...</div>
-  //     </div>
-  //   );
-  // }
-
   return (
     <div
       className="banner"

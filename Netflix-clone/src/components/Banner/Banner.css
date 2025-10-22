@@ -28,6 +28,7 @@
     margin-left: 4rem;
     padding-top: 140px;
     z-index: 10;
+    /* making elements appear in front of or behind other elements. */
     max-width: 50%;
 }
 
@@ -43,6 +44,7 @@
     gap: 1rem;
     margin: 1.5rem 0;
     z-index: 999;
+    /* sets a very high stacking order, typically used for elements that need to appear on top of almost everything else on the page. */
 }
 
 .banner__button {
@@ -67,6 +69,7 @@
 
 .banner__description {
     font-size: 1.2rem;
+    /* root em typically making text 20% larger than the base size. */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
     max-width: 600px;
     color: #e5e5e5;
