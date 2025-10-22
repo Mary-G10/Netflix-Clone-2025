@@ -27,7 +27,7 @@ This is an educational project that may trigger browser security warnings due to
 
 ## Screenshots
 
-![StreamFlix Screenshot](screenshots/screenshot.png)
+![StreamFlix Screenshot](../screenshots/screenshot.png)
 
 ---
 
