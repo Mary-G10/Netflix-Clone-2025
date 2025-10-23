@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-
 const DisclaimerBanner = () => {
   const [isVisible, setIsVisible] = useState(true);
-
   if (!isVisible) return null;
-
   return (
     <div
       style={{
@@ -27,11 +24,9 @@ const DisclaimerBanner = () => {
         flexWrap: "wrap",
       }}
     >
-      <span style={{ fontSize: "18px" }}>‚ö†Ô∏è</span>
+      <span style={{ fontSize: "18px" }}>Ìæ¨</span>
       <span>
-        <strong>EDUCATIONAL PROJECT</strong> | StreamFlix is a movie streaming
-        platform built for learning purposes. No real data collection or login
-        required.
+        <strong>PORTFOLIO PROJECT</strong> | Netflix Clone built by Mary using React, Vite, and TMDB API
       </span>
       <button
         onClick={() => setIsVisible(false)}
@@ -51,5 +46,4 @@ const DisclaimerBanner = () => {
     </div>
   );
 };
-
 export default DisclaimerBanner;
