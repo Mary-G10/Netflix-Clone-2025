@@ -1,6 +1,4 @@
-cat > netlify.toml << 'EOF'
 [build]
   base = "Netflix-clone"
   command = "npm run build"
   publish = "dist"
-EOF
